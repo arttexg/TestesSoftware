@@ -1,0 +1,427 @@
+{
+  "id": "f930b493-8383-4cd3-834b-c49efcd9a85e",
+  "version": "2.0",
+  "name": "ManterLivro",
+  "url": "https://ts-scel-web.herokuapp.com",
+  "tests": [{
+    "id": "42f2e2c7-2291-430e-835e-bc074e4cdd84",
+    "name": "CadastroLivro",
+    "commands": [{
+      "id": "0a8f3242-2d97-4e33-8c54-bf1c5382b8b0",
+      "comment": "",
+      "command": "open",
+      "target": "/sig/livro",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2cab301-84da-40e2-9874-24e9703a083e",
+      "comment": "",
+      "command": "click",
+      "target": "id=isbn",
+      "targets": [
+        ["id=isbn", "id"],
+        ["name=isbn", "name"],
+        ["css=#isbn", "css:finder"],
+        ["xpath=//input[@id='isbn']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "535d28fb-5dea-461a-9ddb-22ce5500c40f",
+      "comment": "",
+      "command": "type",
+      "target": "id=isbn",
+      "targets": [
+        ["id=isbn", "id"],
+        ["name=isbn", "name"],
+        ["css=#isbn", "css:finder"],
+        ["xpath=//input[@id='isbn']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "1234"
+    }, {
+      "id": "5e3637e9-0cd7-450d-8a68-ec34ac63543b",
+      "comment": "",
+      "command": "click",
+      "target": "id=autor",
+      "targets": [
+        ["id=autor", "id"],
+        ["name=autor", "name"],
+        ["css=#autor", "css:finder"],
+        ["xpath=//input[@id='autor']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08dd1464-3d97-4e8c-88ff-d3fd3d352574",
+      "comment": "",
+      "command": "type",
+      "target": "id=autor",
+      "targets": [
+        ["id=autor", "id"],
+        ["name=autor", "name"],
+        ["css=#autor", "css:finder"],
+        ["xpath=//input[@id='autor']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Machado de Assis"
+    }, {
+      "id": "52a8d010-10b1-488d-9dd7-40ace3ab9b41",
+      "comment": "",
+      "command": "type",
+      "target": "id=titulo",
+      "targets": [
+        ["id=titulo", "id"],
+        ["name=titulo", "name"],
+        ["css=#titulo", "css:finder"],
+        ["xpath=//input[@id='titulo']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "Dom Casmurro"
+    }, {
+      "id": "4195bb95-1c86-4723-a91c-a4ac1425585a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(1)",
+      "targets": [
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Cadastrar Livro']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "deb8f64f-5acc-4d16-a88b-78d243752d80",
+    "name": "ConsultaLivro",
+    "commands": [{
+      "id": "11d876f7-3542-445d-bea2-327e17337131",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aee5a7e3-a900-4d71-8334-e2725eafc9f7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Livros",
+      "targets": [
+        ["linkText=Livros", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Livros')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/sig/livro')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Livros')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1155d983-0339-4952-af94-b7b3e2aa2aff",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Lista de Livros",
+      "targets": [
+        ["linkText=Lista de Livros", "linkText"],
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Lista de Livros')]", "xpath:link"],
+        ["xpath=//a[@type='submit']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/sig/livros')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Lista de Livros')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "35347dea-6319-408b-bcfa-73d9f27d8a76",
+    "name": "CadastroLivro - Assert Label Livro Duplicado",
+    "commands": [{
+      "id": "2a355a19-f1fa-4d16-af85-c5acd4959131",
+      "comment": "",
+      "command": "open",
+      "target": "/sig/livro",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f5d19ff2-b9dd-43cd-8d44-95df8fef5a16",
+      "comment": "",
+      "command": "click",
+      "target": "id=isbn",
+      "targets": [
+        ["id=isbn", "id"],
+        ["name=isbn", "name"],
+        ["css=#isbn", "css:finder"],
+        ["xpath=//input[@id='isbn']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "759a80db-ade8-4c70-8fd0-90a7f7c28063",
+      "comment": "",
+      "command": "type",
+      "target": "id=isbn",
+      "targets": [
+        ["id=isbn", "id"],
+        ["name=isbn", "name"],
+        ["css=#isbn", "css:finder"],
+        ["xpath=//input[@id='isbn']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "1234"
+    }, {
+      "id": "787027cb-6618-4ebe-9acd-2770d8a70721",
+      "comment": "",
+      "command": "click",
+      "target": "id=autor",
+      "targets": [
+        ["id=autor", "id"],
+        ["name=autor", "name"],
+        ["css=#autor", "css:finder"],
+        ["xpath=//input[@id='autor']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81e9be2c-c87c-4ae8-bc0c-64ab69ca952b",
+      "comment": "",
+      "command": "type",
+      "target": "id=autor",
+      "targets": [
+        ["id=autor", "id"],
+        ["name=autor", "name"],
+        ["css=#autor", "css:finder"],
+        ["xpath=//input[@id='autor']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Machado de Assis"
+    }, {
+      "id": "3b92c212-297d-426a-a78f-c7259b801f58",
+      "comment": "",
+      "command": "type",
+      "target": "id=titulo",
+      "targets": [
+        ["id=titulo", "id"],
+        ["name=titulo", "name"],
+        ["css=#titulo", "css:finder"],
+        ["xpath=//input[@id='titulo']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "Dom Casmurro"
+    }, {
+      "id": "15257c70-67bb-4e9c-b091-efb07f6b87c0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(1)",
+      "targets": [
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Cadastrar Livro']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f11f57d9-ea66-4298-a7be-1c3aef7e3935",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.text-danger",
+      "targets": [
+        ["css=.text-danger", "css:finder"],
+        ["xpath=//h6", "xpath:position"],
+        ["xpath=//h6[contains(.,'Livro ja cadastrado')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7a447058-a095-42d2-8251-d8b62a172027",
+    "name": "EditaLivro - Sem Validação ID",
+    "commands": [{
+      "id": "2d569e3a-b623-4c56-9f98-6505449ce985",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e185498-f1fb-4c33-a386-74b7e3c1357e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "968x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6f52d5a-6faf-4f3f-a44c-225e222afc91",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Livros",
+      "targets": [
+        ["linkText=Livros", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Livros')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/sig/livro')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Livros')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa336641-4d76-420e-8f77-ca7120fb5183",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Lista de Livros",
+      "targets": [
+        ["linkText=Lista de Livros", "linkText"],
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Lista de Livros')]", "xpath:link"],
+        ["xpath=//a[@type='submit']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/sig/livros')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Lista de Livros')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "515baa62-3340-43da-af3c-b6947275fdca",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) .btn-primary",
+      "targets": [
+        ["css=tr:nth-child(2) .btn-primary", "css:finder"],
+        ["xpath=(//a[contains(text(),'Editar')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/sig/livros/1234')]", "xpath:href"],
+        ["xpath=//tr[2]/td[5]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3fda0536-6c0a-4392-b616-ab25577e6e13",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21daf2c4-9e79-48fa-9a96-432334f2d998",
+      "comment": "",
+      "command": "type",
+      "target": "id=autor",
+      "targets": [
+        ["id=autor", "id"],
+        ["name=autor", "name"],
+        ["css=#autor", "css:finder"],
+        ["xpath=//input[@id='autor']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Mark Anthony"
+    }, {
+      "id": "469e2f57-2e4c-490f-a2c8-7943578ac3d7",
+      "comment": "",
+      "command": "click",
+      "target": "id=titulo",
+      "targets": [
+        ["id=titulo", "id"],
+        ["name=titulo", "name"],
+        ["css=#titulo", "css:finder"],
+        ["xpath=//input[@id='titulo']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d49beace-ffcf-4dcb-94c2-fc26110535e6",
+      "comment": "",
+      "command": "type",
+      "target": "id=titulo",
+      "targets": [
+        ["id=titulo", "id"],
+        ["name=titulo", "name"],
+        ["css=#titulo", "css:finder"],
+        ["xpath=//input[@id='titulo']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "Roman Anthologies"
+    }, {
+      "id": "f8c2d27c-178c-4393-ac30-687071b19e83",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Atualiza Livro']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67b797f1-28a7-470a-b404-0cda7270921f",
+      "comment": "",
+      "command": "forEach",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6be2e827-144b-41d3-966b-fd7f6e537571",
+    "name": "ExcluiLivro - Sem Validação ID",
+    "commands": [{
+      "id": "8eb77c79-b992-41d4-9ece-1e97f873ed7a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ec7ba9e-c8a6-4e22-904c-5ab52e2c06df",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "968x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d6c35e0-1090-4001-8cfc-d1fb1855d6b5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Livros",
+      "targets": [
+        ["linkText=Livros", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Livros')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/sig/livro')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Livros')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b18c8931-00bb-4f75-92e2-aed8a245898d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Lista de Livros",
+      "targets": [
+        ["linkText=Lista de Livros", "linkText"],
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Lista de Livros')]", "xpath:link"],
+        ["xpath=//a[@type='submit']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/sig/livros')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Lista de Livros')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b13dfb70-0453-4942-a353-eb0c92f92ca9",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) .delete",
+      "targets": [
+        ["css=tr:nth-child(2) .delete", "css:finder"],
+        ["xpath=(//a[contains(text(),'Excluir')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/sig/livro/18')]", "xpath:href"],
+        ["xpath=//tr[2]/td[5]/div/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6b4605f6-bca7-4feb-b0b9-83799346d55e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["42f2e2c7-2291-430e-835e-bc074e4cdd84"]
+  }],
+  "urls": ["https://ts-scel-web.herokuapp.com/"],
+  "plugins": []
+}
